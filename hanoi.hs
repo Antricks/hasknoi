@@ -48,8 +48,8 @@ drawTowers towers@(a, b, c) =
       drawDisc a i =
         let n = i - (height - length a)
             width
-              | null a = 1
-              | otherwise = maximum a + 1
+              | null a = 2
+              | otherwise = maximum a + 2
             space = replicate (width - discLen) ' '
             discLen
               | n < 0 = 0
